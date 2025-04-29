@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 logger = logging.getLogger(__name__) 
 
-st.header("SportsWorldCentral Data App")
+st.header("Streamlit Data App")
 st.subheader("Team Touchdown Totals")
 
 try:
@@ -49,7 +49,7 @@ try:
     grouped_df = merged_df.groupby('team_name')['total_tds'].sum()
     fig, ax = plt.subplots()
     grouped_df.plot(kind="barh", xlabel='Total TDs', 
-                    ylabel="Team Name", title="Total TDs - 2023", ax=ax)
+                    ylabel="Team Name", title="Total TDs", ax=ax)
     st.pyplot(fig)
 
 except Exception as e:

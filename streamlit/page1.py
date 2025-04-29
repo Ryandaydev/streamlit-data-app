@@ -1,11 +1,11 @@
 import streamlit as st
-import swc_simple_client as swc
+import simple_api_client as swc
 import pandas as pd
 import logging
 
 logger = logging.getLogger(__name__) 
 
-st.header("SportsWorldCentral Data App")
+st.header("Streamlit Data App")
 st.subheader("Team Rosters Page")
 
 base_url = st.session_state['base_url']

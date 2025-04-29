@@ -4,4 +4,3 @@ streamlit>=1.38.0
 httpx>=0.27.0
 nfl_data_py
 matplotlib
-backoff>=2.2.1

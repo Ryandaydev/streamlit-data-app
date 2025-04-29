@@ -4,7 +4,7 @@ import pandas as pd
 
 
 if 'base_url' not in st.session_state:
-    st.session_state['base_url'] = '[add Base URL]'
+    st.session_state['base_url'] = 'http://0.0.0.0:8000'
 
 logging.basicConfig(
     filename='football_app.log',  
